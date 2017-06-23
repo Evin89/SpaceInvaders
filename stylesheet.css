@@ -1,0 +1,55 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+html {
+	width: 100%;
+}
+
+.header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.gameBoard {
+	position: relative;
+	margin: 0px auto;
+	width: 600px;
+	height: 600px;
+	border: 1px solid #000;
+}
+
+.block {
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+
+.enemyBlock {
+	top: 0px;
+	position: absolute;
+	/*background-color: red;*/
+	background-image: url("SpaceInvaderImage50x50.png");
+}
+
+.playerBlock {
+	position: absolute;
+	bottom: 0px;
+	background-color: yellow;
+}
+
+.board {
+	text-align: center;
+}
+
+#startGame_content a{
+	display: block;
+	text-align: center;
+}

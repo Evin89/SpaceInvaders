@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Space Invaders</title>
+	<link rel="icon" href="space_invader_64.ico">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+<body>
+	<div class="container">
+
+		<div class="row header">
+			<img src="spaceInvaderLogo.png"/>
+		</div>
+
+		<div id="startGame_content" class="row">
+			<div class="col-md-12" style="text-align: center">
+				<h2>How to play:</h2>
+				<p>Gebruik de toetsen A en D om met je blokje zoveel mogelijk spaveinvaders tegen te houden!</p>
+			</div>
+			<a href="#gameScreen" id="gameScreen" class="col-md-2 col-md-push-5 btn btn-primary">Start Game</a>
+		</div>
+
+		<div id="gameScreen_content" class="gameScreen row">
+			<div id="scoreBoard" class=" board">Score:</div>
+			<div class="score board" id="score"></div>
+			<div id="healthBoard" class=" board">Health:</div>
+			<div class="health board" id="health"></div>
+			<div id="gameBoard" class="gameBoard ">
+			</div>
+		</div>
+
+		<div id="gameOverScreen_content">
+			<a href="#gameScreen" id="gameScreen" class="col-md-12 col-md btn btn-primary">Start new game</a></div>
+		</div>
+
+		<!-- Libraries -->
+		<script src="src/jquery.min.js"></script>
+		<script src="src/underscore-min.js"></script>
+		<script src="src/backbone-min.js"></script>
+
+		<!-- Files -->
+		<script type="text/javascript" src="./dist/init.js"></script>
+
+		<!-- models -->
+		<script type="text/javascript" src="./src/models/BlockModel.js"></script>
+		<script type="text/javascript" src="./src/models/PlayerModel.js"></script>
+
+		<!-- collecitons -->
+		<script type="text/javascript" src="./src/collections/EnemyCollection.js"></script>
+
+		<!-- views -->
+		<script type="text/javascript" src="./src/views/GameView.js"></script>
+		<script type="text/javascript" src="./src/views/MainView.js"></script>
+		<script type="text/javascript" src="./src/views/ScoreView.js"></script>
+
+		<!-- routers -->
+		<script type="text/javascript" src="./src/routers/Router.js"></script>
+
+		<!-- main -->
+		<script type="text/javascript" src="./src/main.js"></script>
+
+
+	</body>
+	</html>
